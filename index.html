@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>C4C</title>
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg" />
+    <!-- <link rel="stylesheet" href="path/to/react-responsive-carousel.min.css" /> -->
   </head>
   <body>
     <!-- HOME  + NAVBAR -->
@@ -139,7 +140,86 @@
     <div class="main-container"></div>
 
     <!-- WHY US ? +  SLIDER -->
-    <div class="main-container"></div>
+    <div class="main-container why-us">
+      <div class="why-us-main-container">
+        <img
+          class="why-us-main-bg"
+          src="./assets/bg-dots.svg"
+          alt="bg-design"
+        />
+        <p class="why-us-title">WHY US ?</p>
+        <h1 class="why-us-head">
+          Exclusive benefits, with seamless experience
+        </h1>
+        <p class="why-us-subtitle">
+          We provide multiple benefits with user experience in mind so that
+          users don’t have any trouble interacting with the application. Easy to
+          use solution built just for you.
+        </p>
+      </div>
+      <!-- <div id="why-us-carousel"></div> -->
+      <div class="why-us-sub-container carousel-slide">
+        <div class="why-us-sub-content-container">
+          <!-- slide starts here -->
+          <div class="slider-container slide-1">
+            <img
+              class="why-us-border-icon"
+              src="./assets/border_tile.svg"
+              alt="border-icon"
+            />
+            <div class="why-us-content-image">
+              <img src="./assets/slider_avatar_1.svg" alt="icon" />
+            </div>
+            <div class="why-us-content">
+              <h1 class="why-us-content-title">Secure</h1>
+              <p class="why-us-content-description">
+                Funds are secured via Smart Contracts before they are delivered
+                to the receiver.
+              </p>
+            </div>
+          </div>
+          <!-- slide ends here -->
+          <!-- slide starts here -->
+          <div class="slider-container slide-2 display-hide">
+            <img
+              class="why-us-border-icon"
+              src="./assets/border-tile-left.svg"
+              alt="border-icon"
+            />
+            <div class="why-us-content">
+                <h1 class="why-us-content-title">Cancellable</h1>
+                <p class="why-us-content-description">
+                    All transfer could be cancelled until claimed from receiver. Once claimed the cancel option gets removed. Preventing
+                    wrong transactions from happening.
+                </p>
+            </div>
+            <div class="why-us-content-image">
+              <img src="./assets/slider_avatar_2.svg" alt="icon" />
+            </div>
+          </div>
+          <!-- slide ends here -->
+          <!-- slide starts here -->
+          <div class="slider-container slide-3 display-hide">
+            <img
+              class="why-us-border-icon"
+              src="./assets/border_tile.svg"
+              alt="border-icon"
+            />
+            <div class="why-us-content-image">
+                <img src="./assets/slider_avatar_3.svg" alt="icon" />
+            </div>
+            <div class="why-us-content">
+                <h1 class="why-us-content-title">No wallets needed</h1>
+                <p class="why-us-content-description">
+                    Receiver will be instructed on how to create wallet easily and get the assets via our link or mobile number.
+                </p>
+                <button class="why-us-slide-btn">Get Started</button>
+            </div>
+          </div>
+          <!-- slide ends here -->
+        </div>
+      </div>
+    </div>
 
     <!-- SUBSCRIPTION -->
     <div class="main-container subscription">
@@ -172,5 +252,7 @@
         </div>
       </div>
     </div>
+    <!-- <script src="path/to/react-responsive-carousel.min.js"></script> -->
+    <script src="./script.js"></script>
   </body>
 </html>
