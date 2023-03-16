@@ -430,16 +430,45 @@ nav a {
   box-sizing: content-box;
 }
 .iphone-wrapper {
-  background-image: url(/assets/howItWorks/mobileFrame.svg);
-  height: 750px;
-  width: 350px;
-  background-size: contain;
-  background-repeat: no-repeat;
+  /* background-image: url(/assets/howItWorks/mobileFrame.svg); */
+  /* height: 750px; */
+  /* width: 350px; */
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  background-color: orange;
+  overflow: hidden;
 }
 
 .iphone-wrapper video {
   width: 340px;
   height: 750px;
+  padding: 0 1rem;
+  border-radius: 5rem;
+}
+
+.phone-container {
+  background-color: #16e01d6e;
+  width: 400px;
+  height: 800px;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.phone-frame {
+  position: absolute;
+  top: -1.5rem;
+  left: -3rem;
+  z-index: 2;
+  width: 500px;
+  height: 848px;
+}
+
+.phone-container video {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4.5rem;
 }
 /* WHY US ? +  SLIDER */
 .why-us {
