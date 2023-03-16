@@ -156,6 +156,7 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
 }
 
 @media screen and (max-width:1200px) {
@@ -164,6 +165,19 @@ nav a {
     }
 }
 
+.our-mission-border-icon{
+    width: 5vw;
+    position: absolute;
+    bottom: -5%;
+    right: 2%;
+    transform: translate(0, 0);
+}
+
+@media screen and (max-width:600px) {
+    .our-mission-border-icon{
+        display: none;
+    }
+}
 
 .our-mission-card-container{
     display: flex;
