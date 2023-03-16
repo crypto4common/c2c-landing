@@ -653,3 +653,42 @@ nav a {
     background-color: #16e01e99;
 }
 
+/* Other Animations */
+.fade-in {
+    opacity: 0;
+    position: relative;
+    top: 0;
+    margin-top: 1rem;
+    animation: fade-in-anime 1s ease-in-out forwards;
+}
+
+.fade-in-static {
+    opacity: 0;
+    position: relative;
+    top: 0;
+    animation: fade-in-anime 2s ease-in-out forwards;
+}
+
+@keyframes fade-in-anime {
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+.fade-out {
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+    opacity: 1;
+    animation: fade-out-anime 1s ease-in-out forwards;
+}
+
+@keyframes fade-out-anime {
+    100% {
+        opacity: 0;
+        /* transform: translateY(-50%); */
+    }
+}
+
+/* Other Animations Ends Here */

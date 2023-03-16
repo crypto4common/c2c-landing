@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./style.css" />
     <title>C4C</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.svg" />
-    <!-- <link rel="stylesheet" href="path/to/react-responsive-carousel.min.css" /> -->
   </head>
   <body>
     <!-- HOME  + NAVBAR -->
@@ -24,7 +23,7 @@
       </div>
 
       <div class="home-body">
-        <div class="home-text-container">
+        <div class="home-text-container fade-anime">
           <div class="home-text-sub-container">
             <img
               src="assets/home/closeArrowTop.svg"
@@ -54,7 +53,7 @@
             <button class="send-btn">Send Now</button>
           </div>
         </div>
-        <div class="phone-scroll-container">
+        <div class="phone-scroll-container fade-anime">
           <div class="phone-container-left">
             <img src="assets/home/iphone1.svg" class="first" alt="" />
             <img src="assets/home/iphone2.svg" alt="" />
@@ -75,15 +74,15 @@
 
     <!-- OUR MISSION -->
     <div class="main-container our-mission">
-      <div class="our-mission-main-container">
+      <div class="our-mission-main-container fade-anime">
         <img
           class="mission-main-bg"
           src="./assets/bg-dots.svg"
           alt="bg-design"
         />
-        <p class="our-mission-title">OUR MISSION</p>
-        <h1 class="our-mission-head">To bring crypto to the common folks.</h1>
-        <p class="our-mission-subtitle">
+        <p class="our-mission-title fade-anime">OUR MISSION</p>
+        <h1 class="our-mission-head fade-anime">To bring crypto to the common folks.</h1>
+        <p class="our-mission-subtitle fade-anime">
           The advantages of the crypto should be known to the entire world.
           Crypto shouldn’t be a thing only tech savy people can use. Bridging
           the gap between people and technology
@@ -97,9 +96,9 @@
         />
         <!-- Mission card -->
         <div class="our-mission-card-container">
-          <img class="mission-card-icon" src="./assets/mic.svg" alt="icon" />
-          <h1 class="mission-card-title">Encourage</h1>
-          <p class="mission-card-subtitle">
+          <img class="mission-card-icon fade-anime" src="./assets/mic.svg" alt="icon" />
+          <h1 class="mission-card-title fade-anime">Encourage</h1>
+          <p class="mission-card-subtitle fade-anime">
             We want to give a person the taste of crypto world and motivate them
             to study it more on their own
           </p>
@@ -108,12 +107,12 @@
         <!-- Mission card -->
         <div class="our-mission-card-container">
           <img
-            class="mission-card-icon"
+            class="mission-card-icon fade-anime"
             src="./assets/arrow_board.svg"
             alt="icon"
           />
-          <h1 class="mission-card-title">Simplicity</h1>
-          <p class="mission-card-subtitle">
+          <h1 class="mission-card-title fade-anime">Simplicity</h1>
+          <p class="mission-card-subtitle fade-anime">
             Making the concept of crypto so simple that even a common people can
             understand it.
           </p>
@@ -122,12 +121,12 @@
         <!-- Mission card -->
         <div class="our-mission-card-container">
           <img
-            class="mission-card-icon"
+            class="mission-card-icon fade-anime"
             src="./assets/security.svg"
             alt="icon"
           />
-          <h1 class="mission-card-title">Secured</h1>
-          <p class="mission-card-subtitle">
+          <h1 class="mission-card-title fade-anime">Secured</h1>
+          <p class="mission-card-subtitle fade-anime">
             Even after simplifying everything our network is secured and backed
             up at a regular interval.
           </p>
@@ -141,25 +140,24 @@
 
     <!-- WHY US ? +  SLIDER -->
     <div class="main-container why-us">
-      <div class="why-us-main-container">
+      <div class="why-us-main-container fade-anime">
         <img
           class="why-us-main-bg"
           src="./assets/bg-dots.svg"
           alt="bg-design"
         />
-        <p class="why-us-title">WHY US ?</p>
-        <h1 class="why-us-head">
+        <p class="why-us-title fade-anime">WHY US ?</p>
+        <h1 class="why-us-head fade-anime">
           Exclusive benefits, with seamless experience
         </h1>
-        <p class="why-us-subtitle">
+        <p class="why-us-subtitle fade-anime">
           We provide multiple benefits with user experience in mind so that
           users don’t have any trouble interacting with the application. Easy to
           use solution built just for you.
         </p>
       </div>
-      <!-- <div id="why-us-carousel"></div> -->
-      <div class="why-us-sub-container carousel-slide">
-        <div class="why-us-sub-content-container">
+      <div class="why-us-sub-container">
+        <div class="why-us-sub-content-container fade-anime">
           <!-- slide starts here -->
           <div class="slider-container slide-1">
             <img
@@ -234,15 +232,15 @@
         alt="subscription-icon"
       />
       <div class="subscription-content">
-        <h1 class="subscription-head">
+        <h1 class="subscription-head fade-anime">
           Millions of users are lost when it comes to crypto and wallets.
         </h1>
-        <p class="subscription-subtitle">
+        <p class="subscription-subtitle fade-anime">
           “By 2024, at least 50% of the world’s population is expected to use
           digital wallets for transactions, valued at over $ 9 trillion annually
           ” - ripple
         </p>
-        <div class="subscription-input-container">
+        <div class="subscription-input-container fade-anime">
           <input
             class="subscription-input"
             type="text"
@@ -252,7 +250,9 @@
         </div>
       </div>
     </div>
-    <!-- <script src="path/to/react-responsive-carousel.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
