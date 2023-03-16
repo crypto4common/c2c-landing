@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>C4C</title>
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- HOME  + NAVBAR -->
@@ -23,7 +27,7 @@
       </div>
 
       <div class="home-body">
-        <div class="home-text-container">
+        <div class="home-text-container fade-anime">
           <div class="home-text-sub-container">
             <img
               src="assets/home/closeArrowTop.svg"
@@ -53,7 +57,7 @@
             <button class="send-btn">Send Now</button>
           </div>
         </div>
-        <div class="phone-scroll-container">
+        <div class="phone-scroll-container fade-anime">
           <div class="phone-container-left">
             <img src="assets/home/iphone1.svg" class="first" alt="" />
             <img src="assets/home/iphone2.svg" alt="" />
@@ -74,15 +78,17 @@
 
     <!-- OUR MISSION -->
     <div class="main-container our-mission">
-      <div class="our-mission-main-container">
+      <div class="our-mission-main-container fade-anime">
         <img
           class="mission-main-bg"
           src="./assets/bg-dots.svg"
           alt="bg-design"
         />
-        <p class="our-mission-title">OUR MISSION</p>
-        <h1 class="our-mission-head">To bring crypto to the common folks.</h1>
-        <p class="our-mission-subtitle">
+        <p class="our-mission-title fade-anime">OUR MISSION</p>
+        <h1 class="our-mission-head fade-anime">
+          To bring crypto to the common folks.
+        </h1>
+        <p class="our-mission-subtitle fade-anime">
           The advantages of the crypto should be known to the entire world.
           Crypto shouldn’t be a thing only tech savy people can use. Bridging
           the gap between people and technology
@@ -96,9 +102,13 @@
         />
         <!-- Mission card -->
         <div class="our-mission-card-container">
-          <img class="mission-card-icon" src="./assets/mic.svg" alt="icon" />
-          <h1 class="mission-card-title">Encourage</h1>
-          <p class="mission-card-subtitle">
+          <img
+            class="mission-card-icon fade-anime"
+            src="./assets/mic.svg"
+            alt="icon"
+          />
+          <h1 class="mission-card-title fade-anime">Encourage</h1>
+          <p class="mission-card-subtitle fade-anime">
             We want to give a person the taste of crypto world and motivate them
             to study it more on their own
           </p>
@@ -107,12 +117,12 @@
         <!-- Mission card -->
         <div class="our-mission-card-container">
           <img
-            class="mission-card-icon"
+            class="mission-card-icon fade-anime"
             src="./assets/arrow_board.svg"
             alt="icon"
           />
-          <h1 class="mission-card-title">Simplicity</h1>
-          <p class="mission-card-subtitle">
+          <h1 class="mission-card-title fade-anime">Simplicity</h1>
+          <p class="mission-card-subtitle fade-anime">
             Making the concept of crypto so simple that even a common people can
             understand it.
           </p>
@@ -121,12 +131,12 @@
         <!-- Mission card -->
         <div class="our-mission-card-container">
           <img
-            class="mission-card-icon"
+            class="mission-card-icon fade-anime"
             src="./assets/security.svg"
             alt="icon"
           />
-          <h1 class="mission-card-title">Secured</h1>
-          <p class="mission-card-subtitle">
+          <h1 class="mission-card-title fade-anime">Secured</h1>
+          <p class="mission-card-subtitle fade-anime">
             Even after simplifying everything our network is secured and backed
             up at a regular interval.
           </p>
@@ -136,10 +146,168 @@
     </div>
 
     <!-- HOW IT WORKS + VIDEO IFRAME -->
-    <div class="main-container"></div>
+    <div class="main-container">
+      <div class="howitworks-container">
+        <img src="assets/howItWorks/dots.svg" alt="" class="dots" />
+
+        <div class="howitworks-content-container">
+          <div class="howitworks-wrapper">
+            <div>
+              <img
+                src="assets/howItWorks/wheelsIcon.svg"
+                alt=""
+                class="wheels-icon"
+              />
+              <p class="howitworks-header-text fade-anime">HOW IT WORKS ?</p>
+              <p class="howitworks-big-text fade-anime">
+                As simple as a chatting app.
+              </p>
+            </div>
+
+            <div class="howitworks-text-wrapper">
+              <p class="yellow-text fade-anime">VIA PHONE NUMBER</p>
+              <p class="howitworks-text fade-anime">
+                You send tokens to a number from your contacts, the receiver
+                gets a
+                <br />
+                message along with a OTP that he has to enter to claim the
+                tokens. All<br />
+                of this happens by simply chatting with our Pro-bot, that
+                assists you
+                <br />
+                through out the process along with suggestions.
+              </p>
+              <p class="yellow-text fade-anime">VIA LINK</p>
+              <p class="howitworks-text fade-anime">
+                You deposit tokens and share the link, then the receiver will
+                get the<br />
+                simple instructions how to easily create wallet and claim tokens
+              </p>
+            </div>
+
+            <button class="try-now-btn fade-anime">Try Now</button>
+
+            <img
+              src="assets/home/closeArrowBottom.svg"
+              class="howitworks-arrow"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="howitworks-demo">
+          <img
+            src="assets/howItWorks/mockMobileBg.svg"
+            class="mock-mobile-bg"
+            alt=""
+            style="z-index: -1"
+          />
+
+          <div class="phone-container">
+            <img
+              src="assets/howItWorks/mobileFrame.svg"
+              alt=""
+              class="phone-frame"
+            />
+            <div class="phone-inner-container">
+              <video width="99%" autoplay>
+                <source src="assets/videos/test.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="iphone-wrapper"></div>
+        </div>
+      </div>
+    </div>
 
     <!-- WHY US ? +  SLIDER -->
-    <div class="main-container"></div>
+    <div class="main-container why-us">
+      <div class="why-us-main-container fade-anime">
+        <img
+          class="why-us-main-bg"
+          src="./assets/bg-dots.svg"
+          alt="bg-design"
+        />
+        <p class="why-us-title fade-anime">WHY US ?</p>
+        <h1 class="why-us-head fade-anime">
+          Exclusive benefits, with seamless experience
+        </h1>
+        <p class="why-us-subtitle fade-anime">
+          We provide multiple benefits with user experience in mind so that
+          users don’t have any trouble interacting with the application. Easy to
+          use solution built just for you.
+        </p>
+      </div>
+      <div class="why-us-sub-container">
+        <div class="why-us-sub-content-container swiper fade-anime">
+          <div class="why-us-sub-wrapper swiper-wrapper">
+            <!-- slide starts here -->
+            <div class="slider-container slide-1 swiper-slide">
+              <img
+                class="why-us-border-icon"
+                src="./assets/border_tile.svg"
+                alt="border-icon"
+              />
+              <div class="why-us-content-image">
+                <img src="./assets/slider_avatar_1.svg" alt="icon" />
+              </div>
+              <div class="why-us-content">
+                <h1 class="why-us-content-title">Secure</h1>
+                <p class="why-us-content-description">
+                  Funds are secured via Smart Contracts before they are
+                  delivered to the receiver.
+                </p>
+              </div>
+            </div>
+            <!-- slide ends here -->
+            <!-- slide starts here -->
+            <div class="slider-container slide-2 swiper-slide">
+              <img
+                class="why-us-border-icon"
+                src="./assets/border-tile-left.svg"
+                alt="border-icon"
+              />
+              <div class="why-us-content">
+                <h1 class="why-us-content-title">Cancellable</h1>
+                <p class="why-us-content-description">
+                  All transfer could be cancelled until claimed from receiver.
+                  Once claimed the cancel option gets removed. Preventing wrong
+                  transactions from happening.
+                </p>
+              </div>
+              <div class="why-us-content-image">
+                <img src="./assets/slider_avatar_2.svg" alt="icon" />
+              </div>
+            </div>
+            <!-- slide ends here -->
+            <!-- slide starts here -->
+            <div class="slider-container slide-3 swiper-slide">
+              <img
+                class="why-us-border-icon"
+                src="./assets/border_tile.svg"
+                alt="border-icon"
+              />
+              <div class="why-us-content-image">
+                <img src="./assets/slider_avatar_3.svg" alt="icon" />
+              </div>
+              <div class="why-us-content">
+                <h1 class="why-us-content-title">No wallets needed</h1>
+                <p class="why-us-content-description">
+                  Receiver will be instructed on how to create wallet easily and
+                  get the assets via our link or mobile number.
+                </p>
+                <button class="why-us-slide-btn">Get Started</button>
+              </div>
+            </div>
+            <!-- slide ends here -->
+          </div>
+          <div class="why-us-pagination swiper-pagination"></div>
+          <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+        </div>
+      </div>
+    </div>
 
     <!-- SUBSCRIPTION -->
     <div class="main-container subscription">
@@ -154,15 +322,15 @@
         alt="subscription-icon"
       />
       <div class="subscription-content">
-        <h1 class="subscription-head">
+        <h1 class="subscription-head fade-anime">
           Millions of users are lost when it comes to crypto and wallets.
         </h1>
-        <p class="subscription-subtitle">
+        <p class="subscription-subtitle fade-anime">
           “By 2024, at least 50% of the world’s population is expected to use
           digital wallets for transactions, valued at over $ 9 trillion annually
           ” - ripple
         </p>
-        <div class="subscription-input-container">
+        <div class="subscription-input-container fade-anime">
           <input
             class="subscription-input"
             type="text"
@@ -172,5 +340,13 @@
         </div>
       </div>
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
