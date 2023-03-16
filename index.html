@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./style.css" />
     <title>C4C</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- HOME  + NAVBAR -->
@@ -154,13 +158,15 @@
                 alt=""
                 class="wheels-icon"
               />
-              <p class="howitworks-header-text">HOW IT WORKS ?</p>
-              <p class="howitworks-big-text">As simple as a chatting app.</p>
+              <p class="howitworks-header-text fade-anime">HOW IT WORKS ?</p>
+              <p class="howitworks-big-text fade-anime">
+                As simple as a chatting app.
+              </p>
             </div>
 
             <div class="howitworks-text-wrapper">
-              <p class="yellow-text">VIA PHONE NUMBER</p>
-              <p class="howitworks-text">
+              <p class="yellow-text fade-anime">VIA PHONE NUMBER</p>
+              <p class="howitworks-text fade-anime">
                 You send tokens to a number from your contacts, the receiver
                 gets a
                 <br />
@@ -171,15 +177,15 @@
                 <br />
                 through out the process along with suggestions.
               </p>
-              <p class="yellow-text">VIA LINK</p>
-              <p class="howitworks-text">
+              <p class="yellow-text fade-anime">VIA LINK</p>
+              <p class="howitworks-text fade-anime">
                 You deposit tokens and share the link, then the receiver will
                 get the<br />
                 simple instructions how to easily create wallet and claim tokens
               </p>
             </div>
 
-            <button class="try-now-btn">Try Now</button>
+            <button class="try-now-btn fade-anime">Try Now</button>
 
             <img
               src="assets/home/closeArrowBottom.svg"
@@ -232,66 +238,71 @@
         </p>
       </div>
       <div class="why-us-sub-container">
-        <div class="why-us-sub-content-container fade-anime">
-          <!-- slide starts here -->
-          <div class="slider-container slide-1">
-            <img
-              class="why-us-border-icon"
-              src="./assets/border_tile.svg"
-              alt="border-icon"
-            />
-            <div class="why-us-content-image">
-              <img src="./assets/slider_avatar_1.svg" alt="icon" />
+        <div class="why-us-sub-content-container swiper fade-anime">
+          <div class="why-us-sub-wrapper swiper-wrapper">
+            <!-- slide starts here -->
+            <div class="slider-container slide-1 swiper-slide">
+              <img
+                class="why-us-border-icon"
+                src="./assets/border_tile.svg"
+                alt="border-icon"
+              />
+              <div class="why-us-content-image">
+                <img src="./assets/slider_avatar_1.svg" alt="icon" />
+              </div>
+              <div class="why-us-content">
+                <h1 class="why-us-content-title">Secure</h1>
+                <p class="why-us-content-description">
+                  Funds are secured via Smart Contracts before they are
+                  delivered to the receiver.
+                </p>
+              </div>
             </div>
-            <div class="why-us-content">
-              <h1 class="why-us-content-title">Secure</h1>
-              <p class="why-us-content-description">
-                Funds are secured via Smart Contracts before they are delivered
-                to the receiver.
-              </p>
+            <!-- slide ends here -->
+            <!-- slide starts here -->
+            <div class="slider-container slide-2 swiper-slide">
+              <img
+                class="why-us-border-icon"
+                src="./assets/border-tile-left.svg"
+                alt="border-icon"
+              />
+              <div class="why-us-content">
+                <h1 class="why-us-content-title">Cancellable</h1>
+                <p class="why-us-content-description">
+                  All transfer could be cancelled until claimed from receiver.
+                  Once claimed the cancel option gets removed. Preventing wrong
+                  transactions from happening.
+                </p>
+              </div>
+              <div class="why-us-content-image">
+                <img src="./assets/slider_avatar_2.svg" alt="icon" />
+              </div>
             </div>
+            <!-- slide ends here -->
+            <!-- slide starts here -->
+            <div class="slider-container slide-3 swiper-slide">
+              <img
+                class="why-us-border-icon"
+                src="./assets/border_tile.svg"
+                alt="border-icon"
+              />
+              <div class="why-us-content-image">
+                <img src="./assets/slider_avatar_3.svg" alt="icon" />
+              </div>
+              <div class="why-us-content">
+                <h1 class="why-us-content-title">No wallets needed</h1>
+                <p class="why-us-content-description">
+                  Receiver will be instructed on how to create wallet easily and
+                  get the assets via our link or mobile number.
+                </p>
+                <button class="why-us-slide-btn">Get Started</button>
+              </div>
+            </div>
+            <!-- slide ends here -->
           </div>
-          <!-- slide ends here -->
-          <!-- slide starts here -->
-          <div class="slider-container slide-2 display-hide">
-            <img
-              class="why-us-border-icon"
-              src="./assets/border-tile-left.svg"
-              alt="border-icon"
-            />
-            <div class="why-us-content">
-              <h1 class="why-us-content-title">Cancellable</h1>
-              <p class="why-us-content-description">
-                All transfer could be cancelled until claimed from receiver.
-                Once claimed the cancel option gets removed. Preventing wrong
-                transactions from happening.
-              </p>
-            </div>
-            <div class="why-us-content-image">
-              <img src="./assets/slider_avatar_2.svg" alt="icon" />
-            </div>
-          </div>
-          <!-- slide ends here -->
-          <!-- slide starts here -->
-          <div class="slider-container slide-3 display-hide">
-            <img
-              class="why-us-border-icon"
-              src="./assets/border_tile.svg"
-              alt="border-icon"
-            />
-            <div class="why-us-content-image">
-              <img src="./assets/slider_avatar_3.svg" alt="icon" />
-            </div>
-            <div class="why-us-content">
-              <h1 class="why-us-content-title">No wallets needed</h1>
-              <p class="why-us-content-description">
-                Receiver will be instructed on how to create wallet easily and
-                get the assets via our link or mobile number.
-              </p>
-              <button class="why-us-slide-btn">Get Started</button>
-            </div>
-          </div>
-          <!-- slide ends here -->
+          <div class="why-us-pagination swiper-pagination"></div>
+          <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
         </div>
       </div>
     </div>
@@ -333,6 +344,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
