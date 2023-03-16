@@ -1,3 +1,11 @@
+/* 
+extra-small: 0px sm,
+small: 600px md,
+medium: 900px lg,
+large: 1200px xl,
+extra-large: 1536px
+ */
+
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;600;700;900&family=Poppins:wght@100;300;400;500;600;700;900&display=swap");
 
 :root {
@@ -79,6 +87,111 @@ nav a {
 }
 
 /* OUR MISSION */
+.our-mission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+/* Our mission main container starts here */
+.our-mission-main-container{
+    width: 100%;
+    height: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1.5rem;
+}
+
+@media screen and (max-width:600px) {
+    .our-mission-main-container{
+        height: 350px;
+    }
+}
+
+.our-mission-main-container .mission-main-bg{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.our-mission-title{
+    color:var(--secondary);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.our-mission-head{
+    font-weight: 900;
+    font-size: 56px;
+    font-family: Noto Sans;
+}
+
+@media screen and (max-width:600px) {
+    .our-mission-head {
+        text-align: center;
+        font-size: clamp(10vw, 22px, 15vw);
+    }
+}
+
+.our-mission-subtitle{
+    width: 80%;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+}
+/* Our mission main container ends here */
+
+/* Our mission sub container starts here */
+.our-mission-sub-container{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width:1200px) {
+    .our-mission-sub-container {
+        flex-wrap: wrap;
+    }
+}
+
+
+.our-mission-card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 350px;
+    height: 100%;
+}
+
+.mission-card-icon{
+    width: 80px;
+}
+
+.mission-card-title{
+    font-weight: 600;
+    font-size: clamp(16px, 22px, 25px);
+    color: var(--secondary);
+}
+
+.mission-card-subtitle{
+    text-align: center;
+    font-weight: 400;
+    font-size: clamp(14px, 18px, 22px);
+}
+/* Our mission sub container ends here */
+
+
 
 /* HOW IT WORKS + VIDEO IFRAME */
 
