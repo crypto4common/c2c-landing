@@ -65,6 +65,123 @@ body {
 
 .home-body {
   height: 90vh;
+  max-width: 1800px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 4rem;
+}
+
+.home-text-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-text-sub-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  position: relative;
+}
+
+.home-text-sub-container p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.main-bold-text {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  padding-bottom: 1.875rem;
+}
+
+.send-btn {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+  background: transparent;
+  border-radius: 10px;
+  width: 11.9375rem;
+  height: 3.4375rem;
+  margin-top: 4.375rem;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.main-bold-text span {
+  color: var(--secondary);
+}
+
+.phone-scroll-container {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+
+.arrows {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+}
+
+.top-arrow {
+  top: -2rem;
+  left: -3rem;
+}
+
+.bottom-arrow {
+  bottom: 5.5rem;
+  right: -1.5rem;
+}
+
+.phone-container-left {
+  height: 90vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.625rem;
+  overflow: hidden;
+}
+
+.phone-container-right {
+  height: 90vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.625rem;
+  overflow: hidden;
+}
+
+/*keyframe animations*/
+.first {
+  animation: bannermove 15s linear infinite;
+  animation-direction: reverse;
+  margin-top: 10vh;
+}
+
+/*keyframe animations*/
+.first-second-row {
+  animation: bannermove 15s linear infinite;
+  margin-top: 10vh;
+}
+
+@keyframes bannermove {
+  0% {
+    margin-top: 0vh;
+  }
+  100% {
+    margin-top: -130vh;
+  }
 }
 
 nav {
@@ -87,125 +204,123 @@ nav a {
 }
 
 /* OUR MISSION */
-.our-mission{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
+.our-mission {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 /* Our mission main container starts here */
-.our-mission-main-container{
-    width: 100%;
-    height: 40%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap:1.5rem;
+.our-mission-main-container {
+  width: 100%;
+  height: 40%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
-@media screen and (max-width:600px) {
-    .our-mission-main-container{
-        height: 350px;
-    }
+@media screen and (max-width: 600px) {
+  .our-mission-main-container {
+    height: 350px;
+  }
 }
 
-.our-mission-main-container .mission-main-bg{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.our-mission-main-container .mission-main-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.our-mission-title{
-    color:var(--secondary);
-    font-weight: 600;
-    font-size: 18px;
+.our-mission-title {
+  color: var(--secondary);
+  font-weight: 600;
+  font-size: 18px;
 }
 
-.our-mission-head{
-    font-weight: 900;
-    font-size: 56px;
-    font-family: Noto Sans;
+.our-mission-head {
+  font-weight: 900;
+  font-size: 56px;
+  font-family: Noto Sans;
 }
 
-@media screen and (max-width:600px) {
-    .our-mission-head {
-        text-align: center;
-        font-size: clamp(10vw, 22px, 15vw);
-    }
-}
-
-.our-mission-subtitle{
-    width: 80%;
-    font-weight: 500;
-    font-size: 18px;
+@media screen and (max-width: 600px) {
+  .our-mission-head {
     text-align: center;
+    font-size: clamp(10vw, 22px, 15vw);
+  }
+}
+
+.our-mission-subtitle {
+  width: 80%;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
 }
 /* Our mission main container ends here */
 
 /* Our mission sub container starts here */
-.our-mission-sub-container{
-    width: 100%;
-    height: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    position: relative;
+.our-mission-sub-container {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
 }
 
-@media screen and (max-width:1200px) {
-    .our-mission-sub-container {
-        flex-wrap: wrap;
-    }
+@media screen and (max-width: 1200px) {
+  .our-mission-sub-container {
+    flex-wrap: wrap;
+  }
 }
 
-.our-mission-border-icon{
-    width: 5vw;
-    position: absolute;
-    bottom: -5%;
-    right: 2%;
-    transform: translate(0, 0);
+.our-mission-border-icon {
+  width: 5vw;
+  position: absolute;
+  bottom: -5%;
+  right: 2%;
+  transform: translate(0, 0);
 }
 
-@media screen and (max-width:600px) {
-    .our-mission-border-icon{
-        display: none;
-    }
+@media screen and (max-width: 600px) {
+  .our-mission-border-icon {
+    display: none;
+  }
 }
 
-.our-mission-card-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 350px;
-    height: 100%;
+.our-mission-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 350px;
+  height: 100%;
 }
 
-.mission-card-icon{
-    width: 80px;
+.mission-card-icon {
+  width: 80px;
 }
 
-.mission-card-title{
-    font-weight: 600;
-    font-size: clamp(16px, 22px, 25px);
-    color: var(--secondary);
+.mission-card-title {
+  font-weight: 600;
+  font-size: clamp(16px, 22px, 25px);
+  color: var(--secondary);
 }
 
-.mission-card-subtitle{
-    text-align: center;
-    font-weight: 400;
-    font-size: clamp(14px, 18px, 22px);
+.mission-card-subtitle {
+  text-align: center;
+  font-weight: 400;
+  font-size: clamp(14px, 18px, 22px);
 }
 /* Our mission sub container ends here */
-
-
 
 /* HOW IT WORKS + VIDEO IFRAME */
 
