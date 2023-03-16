@@ -14,6 +14,12 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+
 body {
   color: var(--primary-text);
   background-color: var(--primary);
@@ -27,6 +33,7 @@ body {
 .main-container {
   height: 100vh;
   border-bottom: 1px solid white;
+  scroll-snap-align: start;
 }
 
 /* HOME  + NAVBAR */
