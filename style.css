@@ -40,7 +40,6 @@ body {
 
 .main-container {
   height: 100vh;
-  border-bottom: 1px solid white;
   scroll-snap-align: start;
 }
 
@@ -324,124 +323,241 @@ nav a {
 
 /* HOW IT WORKS + VIDEO IFRAME */
 
+.howitworks-container {
+  display: flex;
+}
+
+.howitworks-container .wheels-icon {
+  height: 70px;
+}
+
+.howitworks-container .dots {
+  height: 100vh;
+}
+
+.howitworks-content-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.howitworks-wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 2.5rem;
+  gap: 3.125rem;
+}
+
+.howitworks-content-container .howitworks-arrow {
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  right: 15%;
+}
+
+.howitworks-demo {
+  width: 40%;
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+
+.mock-mobile-bg {
+  width: 21.4394rem;
+  height: 38.9244rem;
+  position: absolute;
+  top: 13%;
+  left: -6%;
+}
+
+.howitworks-header-text {
+  color: var(--secondary);
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.howitworks-big-text {
+  font-weight: 900;
+  font-size: 3.5rem;
+}
+
+.mobile-frame {
+  height: 600px;
+  position: relative;
+  margin: auto;
+}
+
+.yellow-text {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--yellow);
+}
+
+.howitworks-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.howitworks-text {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.try-now-btn {
+  width: 10.8125rem;
+  height: 3.4375rem;
+  background-color: transparent;
+  color: var(--secondary);
+  border: 2px solid var(--secondary);
+  border-radius: 10px;
+}
+/* The device with borders */
+.smartphone {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+  box-sizing: content-box;
+}
+.iphone-wrapper {
+  background-image: url(/assets/howItWorks/mobileFrame.svg);
+  height: 750px;
+  width: 350px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.iphone-wrapper video {
+  width: 340px;
+  height: 750px;
+}
 /* WHY US ? +  SLIDER */
 
 /* SUBSCRIPTION */
-.subscription{
-    position: relative;
+.subscription {
+  position: relative;
 }
 
-.subscription-left-triangle{
-    position: absolute;
-    top:0;
-    left:0;
-    width:15vw;
-    z-index: 1;
+.subscription-left-triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15vw;
+  z-index: 1;
 }
 
-.subscription-bottom-triangle{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 50vw;
-    z-index: 1;
+.subscription-bottom-triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50vw;
+  z-index: 1;
 }
 
-.subscription-content{
-    position: relative;
-    width:80%;
-    height: 80%;
-    margin:0 auto;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    gap: 5rem;
+.subscription-content {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  gap: 5rem;
 }
 
-@media screen and (max-width:600px) {
-    .subscription-content{
-        width: 100%;
-        height: 100%;
-        gap: 1.5rem;
-    }
-}
-
-.subscription-head{
-    font-family: Noto Sans;
-    font-weight: 900;
-    font-size: 56px;
-    text-align: center;
-}
-
-@media screen and (max-width:600px) {
-    .subscription-head{
-        font-size: clamp(10vw, 22px, 15vw);
-    }
-}
-
-.subscription-subtitle{
-    font-weight: 500;
-    font-size: 18px;
-}
-
-@media screen and (max-width:600px) {
-    .subscription-subtitle{
-        text-align: center;
-        font-size: clamp(0.75rem, 0.875rem, 1rem);
-    }
-}
-
-.subscription-input-container{
-    display:flex;
-    align-items: center;
-    justify-content: center;
+@media screen and (max-width: 600px) {
+  .subscription-content {
+    width: 100%;
+    height: 100%;
     gap: 1.5rem;
+  }
 }
 
-@media screen and (max-width:600px) {
-    .subscription-input-container{
-        flex-direction: column;
-    }
+.subscription-head {
+  font-family: Noto Sans;
+  font-weight: 900;
+  font-size: 56px;
+  text-align: center;
 }
 
-.subscription-input{
-    width: 500px;
-    height: 50px;
-    background-color: transparent;
-    border-radius: 10px;
-    padding: 0 1rem;
-    color: var(--primary-text);
-    border:1px solid var(--primary-text);
+@media screen and (max-width: 600px) {
+  .subscription-head {
+    font-size: clamp(10vw, 22px, 15vw);
+  }
 }
 
-@media screen and (max-width:600px) {
-    .subscription-input {
-        width: 90vw;
-    }
+.subscription-subtitle {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+  .subscription-subtitle {
+    text-align: center;
+    font-size: clamp(0.75rem, 0.875rem, 1rem);
+  }
+}
+
+.subscription-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .subscription-input-container {
+    flex-direction: column;
+  }
+}
+
+.subscription-input {
+  width: 500px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 0 1rem;
+  color: var(--primary-text);
+  border: 1px solid var(--primary-text);
+}
+
+@media screen and (max-width: 600px) {
+  .subscription-input {
+    width: 90vw;
+  }
 }
 
 .subscription-input::placeholder {
-    font-weight: 400;
-    font-size: 18px;
-    padding: 1rem;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 1rem;
 }
 
-.subscription-btn{
-    width: 200px;
-    height: 50px;
-    font-weight: 600;
-    font-size: 18px;
-    background-color: var(--secondary);
-    color:var(--primary-text);
-    border-radius: 10px;
-    border:none;
-    transition: all 0.4s ease-in-out;
-    cursor: pointer;
+.subscription-btn {
+  width: 200px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: var(--secondary);
+  color: var(--primary-text);
+  border-radius: 10px;
+  border: none;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
 }
 
-.subscription-btn:hover{
-    background-color: #16e01e99;
+.subscription-btn:hover {
+  background-color: #16e01e99;
 }
-
