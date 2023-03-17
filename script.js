@@ -124,7 +124,7 @@ $(function () {
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.1em solid  #16E01E}";
     document.body.appendChild(css);
   };
   /* Text Typing Animation Ends Here */
@@ -176,5 +176,19 @@ $(function () {
       }
     });
   });
+
+  $("video").each(function () {
+    if ($(this).is(":in-viewport")) {
+      console.log("in view port");
+      if (document.getElementById("v_" + howitworksvideo)) {
+        video = document.getElementById("v_" + howitworksvideo);
+        // video.pause();
+        // video.currentTime = 0;
+        // video.play();
+        video.load();
+      }
+    }
+  });
+
   /* Change Total Supply Text Ends Here */
 });

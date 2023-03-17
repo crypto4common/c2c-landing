@@ -610,7 +610,7 @@ nav a {
 .phone-container {
   width: 300px;
   height: 700px;
-  border-radius: 1rem;
+  border-radius: 0.2rem;
   position: relative;
   display: flex;
   align-items: center;
@@ -618,7 +618,7 @@ nav a {
 }
 
 .phone-inner-container {
-  width: 88%;
+  width: 91%;
   height: 100%;
   position: relative;
   display: flex;
