@@ -310,6 +310,7 @@ nav a {
   border-radius: 0.625rem;
   background-color: var(--secondary);
   color: var(--primary-text);
+  border: none;
 }
 
 /* OUR MISSION */
@@ -319,6 +320,12 @@ nav a {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
+}
+
+@media screen and (max-width:600px) {
+  .our-mission{
+    margin-bottom:3rem;
+  }
 }
 
 /* Our mission main container starts here */
@@ -454,6 +461,7 @@ nav a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 3rem 0;
   }
 }
 
@@ -652,6 +660,7 @@ nav a {
 @media screen and (max-width: 600px) {
   .why-us {
     height: fit-content;
+    margin:3rem 0;
   }
 }
 
@@ -912,6 +921,7 @@ nav a {
 
 @media screen and (max-width: 600px) {
   .subscription-head {
+    width: 90%;
     font-size: clamp(22px, 30px, 38px);
   }
 }
