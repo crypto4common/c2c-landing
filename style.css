@@ -333,6 +333,16 @@ nav a {
   display: flex;
 }
 
+@media screen and (max-width:600px) {
+  .howitworks-container{
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
 .howitworks-container .wheels-icon {
   height: 70px;
 }
@@ -341,11 +351,24 @@ nav a {
   height: 100vh;
 }
 
+@media screen and (max-width:600px) {
+  .howitworks-container .dots{
+    position: absolute;
+    left: 0;
+  }
+}
+
 .howitworks-content-container {
   width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media screen and (max-width:600px) {
+  .howitworks-content-container{
+    width: 100%;
+  }
 }
 
 .howitworks-wrapper {
@@ -359,6 +382,13 @@ nav a {
   gap: 3.125rem;
 }
 
+@media screen and (max-width:600px) {
+  .howitworks-wrapper{
+    align-items: center;
+    gap:1.5rem;
+  }
+}
+
 .howitworks-content-container .howitworks-arrow {
   height: 70px;
   position: absolute;
@@ -366,11 +396,24 @@ nav a {
   right: 15%;
 }
 
+@media screen and (max-width:600px) {
+  .howitworks-content-container .howitworks-arrow{
+    display: none;
+  }
+}
+
+
 .howitworks-demo {
   width: 40%;
   display: grid;
   place-content: center;
   position: relative;
+}
+
+@media screen and (max-width:600px) {
+  .howitworks-demo{
+    width: 100%;
+  }
 }
 
 .mock-mobile-bg {
@@ -387,9 +430,22 @@ nav a {
   font-size: 1.125rem;
 }
 
+@media screen and (max-width:600px) {
+  .howitworks-header-text{
+    text-align: center;
+  }
+}
+
 .howitworks-big-text {
   font-weight: 900;
   font-size: 3.5rem;
+}
+
+@media screen and (max-width:600px) {
+  .howitworks-big-text{
+    font-size: clamp(16px, 22px, 25px);
+    text-align: center;
+  }
 }
 
 .mobile-frame {
@@ -408,6 +464,12 @@ nav a {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+@media screen and (max-width:600px) {
+  .howitworks-text-wrapper p{
+    text-align: center;
+  }
 }
 
 .howitworks-text {
@@ -647,7 +709,7 @@ nav a {
 
 @media screen and (max-width: 600px) {
   .why-us-content-title {
-    font-size: clamp(0.7rem, 1rem, 1.2rem);
+    font-size: clamp(16px, 22px, 25px);
   }
 }
 
@@ -832,7 +894,6 @@ nav a {
 /* Other Animations Ends Here */
 
 /* slider  */
-
 .swiper-pagination-bullet {
   opacity: 1 !important;
   background: var(--primary-text) !important;
