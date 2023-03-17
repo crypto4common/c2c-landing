@@ -37,7 +37,14 @@
             <h1 class="main-bold-text">
               Now anyone can send <br />
               and receive crypto <br />
-              via <span>Phone-number</span>
+              via
+              <span
+                class="typewrite"
+                data-period="2000"
+                data-type='[ "Phone-number", "Link" ]'
+              >
+                <span class="wrap"></span>
+              </span>
             </h1>
             <p>
               One stop solution that allows users to send crypto through phone
@@ -210,7 +217,7 @@
               class="phone-frame"
             />
             <div class="phone-inner-container">
-              <video width="99%" autoplay muted>
+              <video width="99%" autoplay muted id="howitworksvideo">
                 <source src="assets/videos/test.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -347,6 +354,7 @@
     ></script>
     <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/is-in-viewport/3.0.4/isInViewport.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
